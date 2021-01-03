@@ -1,9 +1,10 @@
 # RedirectPlz  
+A Golang script to attempt to fuzz and find open redirect vulns across a range of URLs.  
+This isn't the only script that does this, I just enjoy writing code and working on little tools to help my custom pipelines.  
   
 Any issues, let me know! I plan to extend the source code it can identify, so if there are specific requests please let me know.  
   
 ### Thanks  
-  
 Big thanks to Hakluke, I used Hakrawler's (https://github.com/hakluke/hakrawler) concurrency and picked at the concurrency/goroutine code to patch mine.  
 Thanks LeonMugen (https://github.com/Leonmugen/ORtester) for the payload list.  
   
@@ -14,17 +15,17 @@ go get github.com/crawl3r/redirectplz
   
 ## Standard Run  
 ```
-cat urls.txt | ./redirectplz
+cat urls.txt | ./redirectplz -p payloads.txt
 ```
   
 ## Run and save the output to file  
 ```
-cat urls.txt | ./redirectplz -o output.txt
+cat urls.txt | ./redirectplz -p payloads.txt -o output.txt
 ```  
   
 ## Run in quiet mode, only prints the identified open redirect endpoints
 ```
-cat urls.txt | ./redirectplz -q
+cat urls.txt | ./redirectplz -p payloads.txt -q
 ```
   
 ### License  
