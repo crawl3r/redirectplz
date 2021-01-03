@@ -14,6 +14,8 @@ go get github.com/crawl3r/redirectplz
 ```  
   
 ## Standard Run  
+For now, just supply base URL's (i.e www.skid.com, www.reee.co.uk). I plan to tweak the logic to attempt to fuzz for redirects across all identified links, smartlinks, etc. And ofcourse, if we identify a URL that already performs a redirect, then that will supercede all others.  
+  
 ```
 cat urls.txt | ./redirectplz -p payloads.txt
 ```
