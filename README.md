@@ -4,10 +4,6 @@ This isn't the only script that does this, I just enjoy writing code and working
   
 Any issues, let me know! I plan to extend the source code it can identify, so if there are specific requests please let me know.  
   
-## Thanks  
-Big thanks to Hakluke, I used Hakrawler's (https://github.com/hakluke/hakrawler) concurrency and picked at the concurrency/goroutine code to patch mine.  
-Thanks LeonMugen (https://github.com/Leonmugen/ORtester) for the payload list.  
-  
 ## Installing  
 ```
 go get github.com/crawl3r/redirectplz
@@ -30,6 +26,10 @@ Run in quiet mode, only prints the identified open redirect endpoints.
 ```
 cat urls.txt | ./redirectplz -p payloads.txt -q
 ```
+  
+## Thanks  
+Big thanks to Hakluke, I used Hakrawler's (https://github.com/hakluke/hakrawler) concurrency and picked at the concurrency/goroutine code to patch mine.  
+Thanks LeonMugen (https://github.com/Leonmugen/ORtester) for the payload list.  
   
 ## License  
 I'm just a simple skid. Licensing isn't a big issue to me, I post things that I find helpful online in the hope that others can:  
